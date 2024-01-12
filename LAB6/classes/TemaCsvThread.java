@@ -52,12 +52,10 @@ public class TemaCsvThread implements Runnable {
         String filePath = "classes/forest_surfaces.csv";
         TemaCsvThread temaCsv = new TemaCsvThread(filePath);
 
-        // Creăm un fir de execuție și îl pornim
         Thread thread = new Thread(temaCsv);
         thread.start();
 
         try {
-            // Așteptăm firul de execuție să se termine
             thread.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
