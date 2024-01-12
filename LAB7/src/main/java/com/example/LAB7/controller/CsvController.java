@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.LAB7.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class CsvController {
 
-    private static final String CSV_FILE = "C:\\Users\\daniel_lm\\Desktop\\demo\\src\\main\\java\\com\\example\\demo\\forest_surfaces.csv";
+    private static final String CSV_FILE = "C:\\Github Repos\\Laboratoare-JAVA\\LAB7\\src\\main\\java\\com\\example\\LAB7\\forest_surfaces.csv";
 
     private List<String[]> allData = readCsv();
 
